@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # Rom source repo
-repo init -u https://github.com/ProjectBlaze/manifest -b 15 --git-lfs
+repo init -u https://github.com/ProjectBlaze/manifest -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b blaze https://github.com/israfilbd/local_manifests .repo/local_manifests
+git clone -b main https://github.com/MohamedDevvv/Build- .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,9 +19,10 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=Mohamed
 export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
+export TZ=Africa/Cairo
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -29,7 +30,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_RMX1901-ap3a-eng
+lunch blaze_gale-ap3a-userdebug
 echo "============="
 
 # Make cleaninstall
