@@ -30,7 +30,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_gale-ap3a-userdebug
+lunch blaze_gale-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
